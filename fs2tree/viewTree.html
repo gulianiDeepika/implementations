@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+	<title>Tree from Flat List</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="input.js"></script>
+	<script type="text/javascript" src="fs2tree.js"></script>
+	<style>
+	</style>
+	<script>
+		$(document).ready(function(){
+			var tree = TREE.makeTree(flatlist);
+			$('.tree_container').append(TREE.renderTree(tree));
+		});
+	</script>
+</head>
+<body>
+	<div class="tree_container"></div>
+</body>
+</html>
